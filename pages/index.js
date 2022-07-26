@@ -11,7 +11,7 @@ export async function getStaticProps() {
   const showNext = totalPosts > BLOG.postsPerPage
   return {
     props: {
-      page: 1, // current page is 1
+      page: 1,
       postsToShow,
       showNext
     },
