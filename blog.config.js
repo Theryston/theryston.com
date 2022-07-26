@@ -3,7 +3,7 @@ const BLOG = {
   author: 'Theryston Santos',
   email: 'contato@theryston.com',
   link: 'https://theryston.com',
-  description: 'O blog de programação mais legalzinho do universo.',
+  description: 'O blog de programação mais legalzinho do universo',
   lang: 'pt-BR',
   appearance: 'auto',
   font: 'sans-serif',

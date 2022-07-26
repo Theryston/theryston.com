@@ -3,20 +3,23 @@ import Footer from '@/components/Footer'
 import BLOG from '@/blog.config'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
-// import BlogPost from './BlogPost'
 
 const Container = ({ children, layout, fullWidth, ...customMeta }) => {
   const url = BLOG.path.length ? `${BLOG.link}/${BLOG.path}` : BLOG.link
   const meta = {
-    title: BLOG.title,
+    title: BLOG.description,
     type: 'website',
     ...customMeta
   }
+
+  console.log(meta)
+
   return (
     <div>
       <Head>
-        <title>{meta.title}</title>
-        {/* <meta content={BLOG.darkBackground} name="theme-color" /> */}
+        <title>
+          {meta.title} | {BLOG.title}
+        </title>
         <meta name="robots" content="follow, index" />
         <meta charSet="UTF-8" />
         {BLOG.seo.googleSiteVerification && (
