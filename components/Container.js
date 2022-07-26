@@ -12,8 +12,6 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
     ...customMeta
   }
 
-  console.log(meta)
-
   return (
     <div>
       <Head>
