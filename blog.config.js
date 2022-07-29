@@ -27,7 +27,7 @@ const BLOG = {
   analytics: {
     provider: 'ga',
     gaConfig: {
-      measurementId: 'G-19M1T0E6JZ'
+      measurementId: 'UA-180142011-1'
     }
   },
   // comment: {
