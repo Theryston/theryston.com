@@ -5,7 +5,7 @@ import Tags from '@/components/Tags'
 import PropTypes from 'prop-types'
 import { useRouter } from 'next/router'
 
-const SearchLayout = ({ tags, posts, currentTag }) => {
+const SearchLayout = ({ tags, posts, currentTag, title }) => {
   const [searchValue, setSearchValue] = useState('')
   const router = useRouter()
 
@@ -25,7 +25,7 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
   }
 
   return (
-    <Container>
+    <Container title={title}>
       <div className="relative">
         <input
           value={searchValue}
